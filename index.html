@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        var months = new Array(13);
+        months[1]="января"; months[2]="февраля"; months[3]="марта"; months[4]="апреля"; months[5]="мая"; months[6]="июня"; months[7]="июля"; months[8]="августа"; months[9]="сентября"; months[10]="октября"; months[11]="ноября"; months[12]="декабря";
+    
+        var time = new Date();
+        var thismonth = months[time.getMonth() + 1];
+        var date = time.getDate();
+        var thisyear = time.getYear();
+        var day = time.getDay() + 1;
+    
+        if (thisyear < 2000)
+            thisyear = thisyear + 1900;
+        if (day == 1) DayofWeek = "Воскресенье";
+        if (day == 2) DayofWeek = "Понедельник";
+        if (day == 3) DayofWeek = "Вторник";
+        if (day == 4) DayofWeek = "Среда";
+        if (day == 5) DayofWeek = "Четверг";
+        if (day == 6) DayofWeek = "Пятница";
+        if (day == 7) DayofWeek = "Суббота";
+    </script>
+    <script>           
+        setInterval(function() {
+        var cd = new Date();
+        var clockdat = document.getElementById("clockdat");
+        clockdat.innerHTML = cd.toLocaleTimeString();
+        }, 1000);
+        </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+<body text="white" bgcolor="#9977c5">
+    <div class="youtube">
+    <a href="https://www.youtube.com/user/Apple" target="_blank" class="button5" data-youtube>
+        <img class="YT" src="img/youtube.png"> 
+    </a>
+    </div>    
+    <div class="dada">
+    </div>
+    <!-- цвета для фона #996AD6  #8243D6  #4F2982 -->
+    <nav>
+        <div class="navbar">
+            <div class="nav">
+                <a href="https://www.apple.com/ru/">
+                <img class="logo" style="width:100%" src="img/logo.png" alt="" width="60px" height="60px">
+                </a>
+                <div class="nav__index">
+                    <div class="nav__index-button onclick="slowScroll(.nav__index>
+                        <a href="#Main"> Главная </a> 
+                    </div>
+                </div>
+                <div class="nav__team">
+                    <div class="nav__team-button">
+                        <a href="#Prod"> Продукция </a>
+                    </div>
+                </div>
+                <div class="nav__item">
+                    <div class="nav__item-button">
+                        <a href="#Team" > Основатель </a> 
+                        <a href="https://www.youtube.com/user/Apple" target="_blank" class="button5" data-youtube>
+                            <img class="YT" src="img/youtube.png">
+                        </a> 
+                        <a href="https://www.instagram.com/apple/" target="_blank" class="button5" data-inst>
+                            <img class="inst" src="img/inst.png">
+                        </a>
+                        <a href="https://twitter.com/apple" target="_blank" class="button5" data-inst>
+                            <img class="twitter" src="img/twitter.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <span style="color:#dd6cff">Сегодня:</span>
+            <span style="color:silver; font-size:20px;">
+            <script>
+                document.write(date+" ");
+                document.write(thismonth+ " "+thisyear+" "+"года"+" — "+ DayofWeek);
+            </script>
+            <span id="clockdat" style="color:#dd6cff;"></span>
+            </span>
+        </div>
+    </nav>
+    <div class="INFO">
+        <img src="img/novinka.png" width="100%">
+    </div>
+    <a name="Prod"></a>
+    <div class="footer">
+        <div class="bonj">
+        <a href="https://www.apple.com/ru/shop/buy-iphone/iphone-12">
+            <img class="pa" src="img/iphone.png" alt="" width="450px" height="500px" > </a>
+        </div>
+        <p style="color:white" class="pod_iphone">
+            iPhone 12. Мощный чип.  Система двух камер. 
+            <br>Невероятно прочная передняя панель Ceramic Shield.
+            <br> И великолепный яркий дисплей OLED.
+            <br> Всё это есть в iPhone 12. 
+            <br>В двух размерах.
+            <br>Широкоугольная
+            <br>Сверхшироко­угольная.
+            <br>Режим «Киноэффект» для съёмки видео 1080p 
+            <br> с частотой 30 кадров в секунду.
+            <br>Съёмка HDR‑видео в стандарте Dolby Vision до 4K 
+            <br> с частотой 60 кадров в секунду. </p>
+            <div class="mac">
+            <a href="https://www.apple.com/ru/shop/buy-mac/macbook-pro/14-дюймов-«серый-космос»-10-ядерный-процессор-16-ядерный-графический-процессор-1тб#">
+            <img class="pa" src="img/macbookpro.png" alt="" width="500px"; height="450px";> 
+            </a>
+            </div>
+        <p style="color:white" class="pod_macbookpro">
+            MacBook Pro 14 дюймов.10‑ядерный процессор.
+            <br>16‑ядерный графический процессор.
+            <br>16 ГБ объединённой памяти.
+            <br>SSD‑накопитель 1 ТБ.<br>16‑ядерная система Neural Engine.
+            <br>Дисплей Liquid Retina XDR 14 дюймов.
+            <br>Три порта Thunderbolt 4, порт HDMI, слот для карт SDXC, 
+            <br> разъём питания MagSafe 3.
+            <br>Клавиатура Magic Keyboard с Touch ID.
+            <br>Трекпад Force Touch.
+            <br>Адаптер питания USB‑C мощностью 96 Вт.</p>
+        <div class="air">
+        <a href="https://www.apple.com/ru/shop/product/MME73RU/A/hаушники-airpods-3‑го-поколения">
+        <img class="pa" src="img/airpods.png" alt="" width="450px"; height="450px";>
+        </a>
+        </div>
+        <p style="color:white" class="pod_airpods">
+            Наушники AirPods (3‑го поколения).
+            <br>Абсолютно новый дизайн:
+            <br> переосмысленная форма и 
+            <br> укороченная ножка с датчиком нажатия 
+            <br> для управления воспроизведением и звонками.
+            <br> Увеличенный ресурс аккумулятора: 
+            <br> до 6 часов прослушивания аудио
+            <br>без подзарядки 
+            <br> и более быстрая беспроводная 
+            <br> зарядка  c технологией MagSafe.
+            <br></p>
+        <div class="chasi">
+        <a href="https://www.apple.com/ru/shop/buy-watch/apple-watch-se?preSelect=false&product=MKQ03RU/A&step=detail#">
+        <img class="pa" src="img/watch.png" alt="" width="450px" ; height="450px";>
+        </a>
+        </div>
+        <p style="color:white " class="pod_watch">
+            Apple Watch
+            <br>Корпус из алюминия цвета «сияющая звезда» 
+            <br>• Спортивный ремешок
+            <br> Алюминиевый корпус 
+            <br> очень лёгкий. 
+            <br> Он изготовлен из сплава, 
+            <br>который содержит только переработанный алюминий.
+            <br> Такой материал используется 
+            <br> в аэрокосмической отрасли.
+            <br>Спортивный ремешок изготовлен из надёжного и 
+            <br> необыкновенно лёгкого фторэластомера,
+            который отличается повышенной прочностью.</p>
+        </div>
+<div class="div1"><a name="Team"> </a>
+<a href="https://ru.wikipedia.org/wiki/Джобс,_Стив">
+<img src="img/osn.png" alt="" class="jobs" ><h2 class="Info_jobs">Американский предприниматель, изобретатель и промышленный дизайнер, <br>получивший широкое признание в качестве пионера эры информационных технологий.<br> Один из основателей, председатель совета директоров и CEO корпорации Apple. <br>Один из основателей и CEO киностудии Pixar.</h2>
+</a>
+</div>
+<div class="bottom"><h1> ©Stepanov Inc., 2021 г. Все права защищены.</h1></div>
+</body>
+</html>

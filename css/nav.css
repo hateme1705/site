@@ -1,0 +1,293 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  text-decoration: none;
+  
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+a:link {
+    color: #497DDD; 
+    /* border-bottom: 1px dashed;  */
+  }
+  a:visited {
+    color: rgba(221, 210, 210, 0.63);
+  }
+  a:hover {
+    color: #bd4aff; 
+    border-bottom: .07em solid;
+  }
+  a:active {
+    color: #bf49dd; 
+    border-bottom: 1px dashed;
+  }
+.navbar {
+    background-color: #35283cbb;
+    position: fixed;
+    width: 100%;
+}
+.nav {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1600px;
+    height: 80px;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    background-color: ;
+}
+.logo {
+    
+}
+.nav__index {
+    margin-left: 1050px;
+    /* border: 1px solid #4F2982; */
+    width: 120px;
+    height: 60px;
+    background-color: #2c26818a;
+    border-radius: 20%;
+    
+
+}
+.nav__team {
+    /* border: 1px solid #4F2982; */
+    width: 120px;
+    height: 60px;
+    background-color: #2c26818a;
+    border-radius: 20%;
+
+}
+.nav__item {
+    margin-right: 100px;
+    /* border: 1px solid #4F2982; */
+    width: 120px;
+    height: 60px;
+    background-color: #2c26818a;
+    border-radius: 20% ;
+
+}
+.nav__index-button {
+    text-align: center;
+    padding-top: 13px;
+    font-size: 20px;
+    font-weight:700;
+
+
+}
+
+.nav__team-button {
+    text-align: center;
+    padding-top: 13px;
+    font-size: 20px;
+    font-weight:700;
+
+}
+
+.nav__item-button {
+    text-align: center;
+    padding-top: 13px;
+    font-size: 20px;
+    font-weight:700;
+
+}
+.INFO {
+width: 100%;
+height: 1000px;
+background-image:url(novinka.png);
+}
+.footer {
+  background-color: #35283cc4;
+  width: 100%;
+  height: 1000px;
+  display: flex;
+}
+.div1 {
+  background-color: #35283ce5;
+  width: 100%;
+  height: 1000px;
+}
+.pod_iphone {
+  margin-top: 30%;
+  margin-left: -350px;
+}
+.pod_macbookpro {
+  margin-top: 30%;
+  margin-left: -400px;
+}
+.pod_airpods {
+  margin-top: 30%;
+  margin-left: -350px;
+
+}
+.pod_watch {
+  margin-top: 30%;
+  margin-left: 1450px;
+  position: absolute;
+}
+  .dada {
+    position: absolute;
+    top: 80px;
+    left: 1750px;
+  }
+.youtube {
+  top: 80px;
+  position: absolute;
+}
+.YT {
+  height: 80px;
+  position: fixed;
+  right: 150px;
+  top: 1px;
+}
+.center {
+background-color: #35283c00; padding:5px;
+top: 10px;
+position: fixed;
+left: 250px;
+font-size: 28px;
+}
+.inst {
+height: 75px;
+position: fixed;
+right: 50px;
+top: 3px;
+}
+.twitter {
+height: 70px;
+position: fixed;
+right: 1px;
+top: 5px;
+}
+.bottom {
+  height: 10px;
+  width: 100%;
+  position:absolute;
+  top: 185em;
+}
+.bottom h1 {
+  font-size: 17px;
+  position: absolute;
+  left: 50px;
+}
+.jobs {
+  width: 60%;
+  display:block;
+  margin: auto;
+  padding-top: 1%;
+}
+.Info_jobs {
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 1px 1px 123px rgb(240, 140, 140);
+  color:rgb(175, 147, 147);
+}
+.bonj { display: inline-block;
+      overflow: hidden;
+      } 
+      .bonj img { transition: 1s;
+      display: block;
+      } 
+      .bonj img:hover { transform: scale(1.2);
+      }
+.mac
+{ display: inline-block;
+    overflow: hidden;
+    } 
+    .mac img { transition: 1s;
+    display: block;
+    } 
+    .mac img:hover { transform: scale(1.1);
+}
+.air { display: inline-block;
+  overflow: hidden;
+  } 
+  .air img { transition: 1s;
+  display: block;
+  } 
+  .air img:hover { transform: scale(1.1);
+  }
+.chasi { display: inline-block;
+  overflow: hidden;
+  } 
+  .chasi img { transition: 1s;
+  display: block;
+  } 
+  .chasi img:hover { transform: scale(1.1);
+  }
+  .pa {
+  margin-top: 15%;
+  }
